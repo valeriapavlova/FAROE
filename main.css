@@ -1,0 +1,130 @@
+/* Применение шрифта Alegreya к заголовкам, тексту меню, кнопкам и логотипу */
+header h1, 
+nav ul li a, 
+nav ul li .lang-switcher, 
+.hero h1, 
+.hero p, 
+.hero .btn,
+h2 {
+    font-family: 'Alegreya', serif;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+}
+header {
+    /* Ваши текущие стили */
+    position: relative; /* Добавлено для установки позиционирования */
+    background-image: url("/image/cover2.jpg"); /* Путь к вашему фоновому изображению */
+    background-size: cover; /* Заполняет всю область заголовка, сохраняя пропорции */
+    background-repeat: no-repeat; /* Запрет повторения изображения */
+    background-position: center; /* Центрирование изображения */
+    height: 100vh; /* Высота заголовка равна высоте окна браузера */
+    color: #fff; /* Цвет текста */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Выравнивание содержимого по центру вертикально */
+    align-items: center; /* Выравнивание содержимого по центру горизонтально */
+}
+
+/* Стили для логотипа */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: 'Alegreya', serif;
+    font-size: 24px;
+    font-weight: medium;
+    color: #fff;
+}
+
+/* Стили для навигационного меню */
+nav {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Цвет текста */
+    font-weight: 400;
+    font-family: 'Alegreya', serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* Стили для переключателей языка */
+.lang-switcher {
+    position: absolute;
+    top: auto; 
+    right: 20px; 
+}
+
+.lang-switcher button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Alegreya', serif;
+    margin-left: 10px;
+}
+
+
+/* Стили для заголовка */
+.hero {
+        text-align: center;
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Центрирует элементы по вертикали */
+        align-items: center; /* Центрирует элементы по горизонтали */
+        height: 100vh; /* Занимает всю высоту окна браузера */
+}
+
+.hero h1 {
+    font-size: 96px;
+    margin-bottom: 20px;
+    font-family: 'Alegreya', serif;
+    font-weight: 300;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9800; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Alegreya', serif;
+}
+
+.hero .btn:hover {
+    background-color: #ffa726; /* Цвет фона кнопки при наведении */
+}
