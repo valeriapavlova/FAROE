@@ -1,1 +1,2 @@
 # FAROE
+TEST
